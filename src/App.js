@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './routes/home/home.component';
 
 import Navigation from './routes/navigation/navigation.component';
-import SingIn from './routes/sign-in/sign-in.component';
+import Authentication from './routes/authentication/authentication.component';
 
 const Shop = () => {
   return
@@ -19,7 +19,7 @@ const App = () => {
         {/* 'index' this tells this route is that when you match the (/), with nothing on it, then this should be the home component*/}
         <Route index element={<Home />} />
         <Route path='shop' element={<Shop />} />
-        <Route path='sign-in' element={<SingIn />} />
+        <Route path='auth' element={<Authentication />} />
 
       </Route>
 
